@@ -3,7 +3,7 @@
 #    config   #
 ###############
 
-
+~~~
 ~/coudlbeafile.txt
 ~/myscript.sh
 ~/home/user
@@ -12,6 +12,7 @@ mkdir bin in /home/user
 mv myscript.sh /home/user/bin
 PATH=$PATH:~/bin   or PATH="$PATH:~/bin" 
 run myscript.sh in any place
+~~~
 
 ######################
 # Variables examples #
@@ -60,9 +61,9 @@ echo $date: $mynote >> ${topic}mynotes.txt
 echo Note \'$mynote\'
 
 ###################
-#USING Variables  #
-# Best practices  #
-# Reading input   #
+# USING Variables  #
+# Best practices   #
+# Reading input    #
 ###################
 #Best practices
 -Use lowercase names
@@ -82,9 +83,9 @@ Braces
 Another good habit:
 1. Use $HOME instead of ~ (could have bash issues with unexpected results)
 
-################
-#Reading input #
-################
+#################
+# Reading input #
+#################
 read:
  1. Reads a line of input into a variable 
  read var 
@@ -228,6 +229,7 @@ INPUT AND OUTPUT
 **************
 printf & echo
 **************
+~~~
 echo "Hola Itzel"
 Hola Itzel
 ~$ printf "Hola"
@@ -236,6 +238,7 @@ Hola Itzelitzel@localhost:~$ printf "Hola Itzel\n" #salto de linea
 Hola Itzel
 itzel@localhost:~$ printf "Hola %s como estas\n" $USER
 Hola itzel como estas
+~~~
 
 %s #some string
 
