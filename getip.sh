@@ -10,7 +10,7 @@ ip=$(ifconfig $interface | grep inet)
 # echo $ip | cut -d " " -f 2
 ip=$( echo $ip | cut -d " " -f 2)
 ip=$(echo $ip | cut -d ":" -f 2)
-echo "######getting ip address from eth0 interface#########"
+echo "######getting ip address from $interface interface#########"
 echo " ** Interface: $interface  ***"
 echo " ** IP Address: $ip ****"
 exit 0
