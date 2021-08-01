@@ -39,6 +39,7 @@ usergreetings="$greeting, $USER"  #values contraining space: use quotes
 *******
 # read with variables in bash:
 ******
+~~~
 #!/bin/bash -x   
 #Adding -x is for debugging
 #simple note taking script
@@ -59,6 +60,7 @@ echo $date: $mynote >> ${topic}mynotes.txt
 #scaping vars, single quotes escape every single character between them
 #scape the quotes themselfs
 echo Note \'$mynote\'
+~~~
 
 ###################
 # USING Variables  #
@@ -102,11 +104,13 @@ Debug in bash
 set -x  #enable debug
 set +x  #disable debug 
 
-p. example:
+i.e:
+~~~
 set -x
 #defining topic var
 topic="$1"
 set +x
+~~~
 
 ########################
 # Using:               #
@@ -121,7 +125,8 @@ set +x
 help to test if a command success
 whether a command succeeds and Then
 react to that:
-p.example:
+e.i:
+~~~
 if mkdir testmkdir; then echo "Ok creating directory"; else "error creating directory"; fi
 #if statement
 if testcode; then
@@ -138,6 +143,7 @@ else
 fi
 #if statement in the command line, note the semicolon ";"
 if testcode; then successcode; else failecode; fi
+~~~
 
 ################
 #RETURN CODES  #
@@ -242,7 +248,7 @@ Hola itzel como estas
 
 %s #some string
 
-
+~~~
 itzel@localhost:~$ printf "p%st\n" a e i o u
 pat
 pet
@@ -258,17 +264,18 @@ itzels home is /home/itzel
 
 printf "|%20s |%20s |%20s |\n" $(ls)
 printf "| %30s | %30s | %30s |\n" $(ls)
-
+~~~
 ... completar mis notes
 
 **************
 Standar Streams
 **************
+~~~
 input 0 /dev/stdin
 output 1 /dev/stdout
 error 2 /dev/stderr
 /dev/null /discards all data sent to it
-
+~~~
 
 
 ###############################
@@ -278,9 +285,10 @@ error 2 /dev/stderr
 ## Loops ##
 #while/until
 #for
+~~~
 for instance:
 for i in {itzel,pedro,peter,gorgo}; do adduser $i ; done;
-
+~~~
 
 
 Break and continue
