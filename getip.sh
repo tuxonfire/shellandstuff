@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 # =^^=
-# Get eth0 ip
+# Get ip from network interface
 # sh thisscript.sh eth0
 
 interface=$1
