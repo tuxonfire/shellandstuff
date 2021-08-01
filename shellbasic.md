@@ -289,9 +289,11 @@ compound commands
 || and &&
 
 # command line arg i.e$ cat myscript $0 is the script itself
+~~~
 #!/bin/sh
 echo "First arg: $1"
 echo "Second arg: $2"
 $ sh script.sh hello world
 First arg: hello
 Second arg: world
+~~~
